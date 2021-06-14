@@ -56,22 +56,34 @@ const Formulario = () => {
             <h3>{datos.nombre}-{datos.apellido}</h3>
             <form onSubmit={handleSubmit(onsubmit)}>
                 <input
-                    name='titulo'
+                    name='title'
                     className='form-control my-2'
-                    {...register('titulo',{
+                    type='text'
+                    {...register('title',{
                         required:{
                             value:true, message:'Titulo requerido'
                         }
                     })}
                 />
                 <span className='text-danger text-small d-block mb2'>
-                    {errors.titulo && errors.titulo.message}
+                    {errors.title && errors.title.message}
+                </span>
+                <input
+                    name='password'
+                    className='form-control my-2'
+                    type='password'
+                    {...register('password',{
+                        required:{
+                            value:true, message:'Contraseña requerida'
+                        }
+                    })}
+                />
+                <span className='text-danger text-small d-block mb2'>
+                    {errors.password && errors.password.message}
                 </span>
                 <button className='btn btn-primary'>Enviar</button>
             </form>
-        </Fragment> 
-        
+        </Fragment>        
      );
 }
- 
 export default Formulario;
