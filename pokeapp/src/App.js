@@ -1,11 +1,9 @@
 import './App.css';
-import HomeContainer from './containers/HomeContainer';
+import Ruta from './Ruta'
 
 function App() {
   return (
-    <div className="App">
-      <HomeContainer />
-    </div>
+    <Ruta />
   );
 }
 
