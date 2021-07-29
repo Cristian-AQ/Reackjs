@@ -1,5 +1,5 @@
 /* AQUI HAREMOS LA PETICION A LA API */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AppNav from "../components/AppNav";
 import List from '../components/List'
 

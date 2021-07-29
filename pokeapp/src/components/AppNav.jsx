@@ -1,6 +1,7 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles';/* permite modificar estilos de M-UI */
 import { AppBar,Toolbar,Typography } from '@material-ui/core';
+import {Link} from 'react-router-dom'
 const AppNav = (props) => {
     const {classes} = props
     return ( 
@@ -8,7 +9,7 @@ const AppNav = (props) => {
         <AppBar className={classes.NavColor} position='static'>
             <Toolbar variant='dense'>
                 <Typography variant='h6' component='p' >
-                    PokeApp
+                    <Link to={'/pokemons'}>PokeApp</Link>
                 </Typography>
             </Toolbar>
         </AppBar>
