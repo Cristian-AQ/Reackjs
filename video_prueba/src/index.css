@@ -13,3 +13,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Para quitar decoracion por defecto */
+a{
+  text-decoration: none;
+  color: white;
+}
